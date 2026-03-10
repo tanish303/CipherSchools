@@ -28,13 +28,14 @@ CipherSQLStudio is a beautifully crafted, browser-based SQL learning platform bu
 1. Clone this repository or extract the project.
 2. In the `backend` folder, copy `.env.example` to `.env` and fill in:
    - `MONGO_URI` (Your MongoDB Atlas Data URL)
-   - `GEMINI_API_KEY` (Your Gemini Key)
-   - `PG_USER`, `PG_PASSWORD`, `PG_HOST` (etc. for your local postgres)
-3. Navigate to **backend** and run:
+   - `GEMINI_API_KEY` (Your Gemini API Key from Google AI Studio)
+   - `PG_USER`, `PG_PASSWORD`, `PG_HOST`, `PG_DATABASE` (Credentials for your PostgreSQL server)
+3. **Database Pre-requisite:** Before proceeding, ensure that your PostgreSQL server is running and you have manually created an empty database matching your `PG_DATABASE` name (e.g., `CREATE DATABASE ciphersandbox;`).
+4. Navigate to **backend** and run:
    > `npm install`
-   > `npm run seed` *(Note: I added `node src/seed.js` script to auto-fill the DB with the initial assignment problem)*
-   > `node src/server.js` (Starts API at port 5000)
-4. Open a new terminal, navigate to **frontend** and run:
+   > `npm run seed` *(This script automatically generates the MongoDB assignments and creates/populates all the required Sandbox tables in PostgreSQL)*
+   > `npm start` or `node src/server.js` (Starts API at port 5000)
+5. Open a new terminal, navigate to **frontend** and run:
    > `npm install`
    > `npm run dev` (Starts frontend at port 5173 usually)
 
