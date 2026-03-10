@@ -45,4 +45,3 @@ Open your browser to the local frontend URL, and start solving SQL assignments w
 
 A hand-drawn architecture map of the Data-Flow is included in the google form.
 
-
