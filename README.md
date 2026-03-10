@@ -42,6 +42,7 @@ Open your browser to the local frontend URL, and start solving SQL assignments w
 
 ## Data-Flow Architecture
 
-As required, this project must include a hand-drawn architecture map showing the flow:
-**User React "Execute" -> API Server -> Node pg Driver -> PostgreSQL Sandbox -> Final View**.
-*(Please draw this manually on paper for your submission per the PDF requirements.)*
+A hand-drawn architecture map of the Data-Flow is included in the project submission.
+
+**System Flow:**
+User React "Execute" -> API Server -> Node pg Driver -> PostgreSQL Sandbox -> Final View.
