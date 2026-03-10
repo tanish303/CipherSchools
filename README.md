@@ -42,7 +42,7 @@ Open your browser to the local frontend URL, and start solving SQL assignments w
 
 ## Data-Flow Architecture
 
-A hand-drawn architecture map of the Data-Flow is included in the project submission.
+A hand-drawn architecture map of the Data-Flow is included in the google form.
 
 **System Flow:**
 User React "Execute" -> API Server -> Node pg Driver -> PostgreSQL Sandbox -> Final View.
