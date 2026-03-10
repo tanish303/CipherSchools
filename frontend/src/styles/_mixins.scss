@@ -1,0 +1,67 @@
+// Mobile-first mixins
+@mixin respond-to($breakpoint) {
+    @if $breakpoint =='mobile' {
+        @media (min-width: $bp-mobile) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =='tablet' {
+        @media (min-width: $bp-tablet) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =='laptop' {
+        @media (min-width: $bp-laptop) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =='desktop' {
+        @media (min-width: $bp-desktop) {
+            @content;
+        }
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin card-style {
+    background: $white;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: $base-spacing;
+}
+
+@mixin button-style($bg, $color) {
+    background: $bg;
+    color: $color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+    }
+}
